@@ -5,9 +5,9 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center py-8">
-      <main className="flex flex-1 w-full max-w-md flex-col items-center justify-between py-32 px-16 sm:inset-shadow-white sm:inset-shadow-2xs sm:shadow-white sm:shadow-2xl rounded-4xl">
-        <div className='w-full flex flex-col justify-center items-center gap-y-8'>
+    <div className="flex flex-col flex-1 items-center justify-center py-8 w-svw max-h-svh">
+      <main className="flex flex-1 w-full max-w-md h-fit flex-col items-center justify-between py-32 px-16 sm:inset-shadow-white sm:inset-shadow-2xs sm:shadow-white sm:shadow-2xl rounded-4xl">
+        <div className='w-full h-fit flex flex-col justify-center items-center gap-y-8'>
           <div className='flex flex-col justify-center items-center gap-y-4'>
             <Image 
               loading="eager"
@@ -22,7 +22,7 @@ export default function Home() {
               &quot;Turn intention into real life 🌍 no more “we should hang out”we actually do it 💥find your people ↓&quot;
             </p>
           </div>
-          <div className="flex flex-col gap-y-4 w-full">
+          <div className="flex flex-col gap-y-4 w-full h-fit">
               <PillButton 
               text={"Whatsapp"} 
               icon={PillButtonIcon.WHATSAPP} 
